@@ -17,14 +17,14 @@ public class Factura {
 
 	public Factura(int idFactura, String numFactura, Date fecha, double totalNeto, double iva, double total
 		) {
-		super();
+		
 		this.idFactura = idFactura;
 		this.numFactura = numFactura;
 		this.fecha = fecha;
 		this.totalNeto = totalNeto;
 		this.iva = iva;
 		this.total = total;
-		//this.cliente = cliente;
+		//hola
 	}
 
 	public int getIdFactura() {
