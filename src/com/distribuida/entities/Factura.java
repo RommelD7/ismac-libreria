@@ -26,7 +26,7 @@ public class Factura {
 		this.total = total;
 		//hola
 	}
-
+//Buenas tardes señor capibara
 	public int getIdFactura() {
 		return idFactura;
 	}
