@@ -15,7 +15,7 @@ public class Cliente {
 	private String telefono;
 	private String correo;
 	
-	
+	//intento de sincronizar
 	public Cliente() { }
 	public Cliente(int idCliente, String cedula, String nombre, String apellido, String direccion, String telefono,
 			String correo) {

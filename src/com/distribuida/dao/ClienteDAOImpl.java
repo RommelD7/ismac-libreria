@@ -2,6 +2,11 @@ package com.distribuida.dao;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.distribuida.entities.Cliente;
@@ -12,11 +17,22 @@ import com.distribuida.entities.Cliente;
 public class ClienteDAOImpl implements ClienteDAO {
 
 	
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	// SELECT * FROM Cliente;    --->  SQL
+	//SELECT cl.* FROM Cliente as cl  ---> SQL
+	
+	//from Cliente   ---> HQL
+	//SELECT cl from Cliente cl  --->HQL
+	
 	
 	@Override
+	@Transactional
 	public List<Cliente> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		Session session = sessionFactory.getCurrentSession();
+		return session.createQuery("from Cliente", Cliente.class).getResultList();
 	}
 
 	@Override
