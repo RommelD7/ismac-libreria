@@ -19,7 +19,6 @@ public class PrincipalCliente {
 	
 
 		ClienteDAO clienteDAO = context.getBean("clienteDAOImpl", ClienteDAO.class);
-
 		List<Cliente> clientes = clienteDAO.findAll();
 
 		clientes.forEach(item -> {

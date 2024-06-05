@@ -16,8 +16,8 @@ public interface ClienteDAO {
 	public void up(Cliente cliente);
 	
 	public void del(int id);
-	
-    //CRUD AVANZADO
+
+	//CRUD AVANZADO
 	
 	
 	

@@ -20,12 +20,7 @@ public class ClienteDAOImpl implements ClienteDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	// SELECT * FROM Cliente;    --->  SQL
-	//SELECT cl.* FROM Cliente as cl  ---> SQL
-	
-	//from Cliente   ---> HQL
-	//SELECT cl from Cliente cl  --->HQL
-	
+
 	
 	@Override
 	@Transactional
